@@ -1,0 +1,8 @@
+C:\Users\Горыныч\Desktop\Internet Explorer\C#\Tanks\Tanks\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Горыныч\Desktop\Internet Explorer\C#\Tanks\Tanks\obj\x86\Debug\Tanks.Properties.Resources.resources
+C:\Users\Горыныч\Desktop\Internet Explorer\C#\Tanks\Tanks\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Горыныч\Desktop\Internet Explorer\C#\Tanks\Tanks\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Горыныч\Desktop\Internet Explorer\C#\Tanks\Tanks\bin\Debug\Tanks.exe
+C:\Users\Горыныч\Desktop\Internet Explorer\C#\Tanks\Tanks\bin\Debug\Tanks.pdb
+C:\Users\Горыныч\Desktop\Internet Explorer\C#\Tanks\Tanks\obj\x86\Debug\Tanks.exe
+C:\Users\Горыныч\Desktop\Internet Explorer\C#\Tanks\Tanks\obj\x86\Debug\Tanks.pdb

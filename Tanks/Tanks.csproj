@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A47C8EE-2BA2-4C1F-B38C-BD012B8F951D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tanks</RootNamespace>
+    <AssemblyName>Tanks</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bullet.cs" />
+    <Compile Include="EnemyStrategy.cs" />
+    <Compile Include="EnemyTank.cs" />
+    <Compile Include="View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs" />
+    <Compile Include="IMoveable.cs" />
+    <Compile Include="OurTank.cs" />
+    <Compile Include="Painter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ApplicationObject.cs" />
+    <Compile Include="Tank.cs" />
+    <Compile Include="Wall.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Left\EnemyTank_Left_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wall\Wall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bullet\Bullet.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Down\EnemyTank_Down_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Down\EnemyTank_Down_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Down\EnemyTank_Down_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Down\EnemyTank_Down_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Down\EnemyTank_Down_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Down\EnemyTank_Down_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Down\EnemyTank_Down_6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Down\EnemyTank_Down_7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Left\EnemyTank_Left_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Left\EnemyTank_Left_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Left\EnemyTank_Left_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Left\EnemyTank_Left_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Left\EnemyTank_Left_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Left\EnemyTank_Left_6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Left\EnemyTank_Left_7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Right\EnemyTank_Right_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Right\EnemyTank_Right_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Right\EnemyTank_Right_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Right\EnemyTank_Right_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Right\EnemyTank_Right_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Right\EnemyTank_Right_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Right\EnemyTank_Right_6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Right\EnemyTank_Right_7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Up\EnemyTank_Up_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Up\EnemyTank_Up_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Up\EnemyTank_Up_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Up\EnemyTank_Up_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Up\EnemyTank_Up_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Up\EnemyTank_Up_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Up\EnemyTank_Up_6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemyTank\Up\EnemyTank_Up_7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Down\OurTank_Down_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Down\OurTank_Down_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Down\OurTank_Down_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Down\OurTank_Down_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Down\OurTank_Down_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Down\OurTank_Down_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Down\OurTank_Down_6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Down\OurTank_Down_7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Left\OurTank_Left_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Left\OurTank_Left_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Left\OurTank_Left_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Left\OurTank_Left_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Left\OurTank_Left_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Left\OurTank_Left_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Left\OurTank_Left_6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Left\OurTank_Left_7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Right\OurTank_Right_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Right\OurTank_Right_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Right\OurTank_Right_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Right\OurTank_Right_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Right\OurTank_Right_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Right\OurTank_Right_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Right\OurTank_Right_6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Right\OurTank_Right_7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Up\OurTank_Up_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Up\OurTank_Up_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Up\OurTank_Up_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Up\OurTank_Up_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Up\OurTank_Up_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Up\OurTank_Up_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Up\OurTank_Up_6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OurTank\Up\OurTank_Up_7.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
